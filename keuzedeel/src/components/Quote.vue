@@ -49,6 +49,13 @@ div {
 
 h1 {
   font-size: 55px;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h2 {
+  font-family: "Noto Serif Georgian", serif;
 }
 
 button {
@@ -56,7 +63,8 @@ button {
   font-size: larger;
   font-weight: 600;
   border-radius: 12px;
-  padding: 10px;
+  margin-top: 15px;
+  padding: 17px;
   background-color: #e76b74;
   border: none;
   color: #1a1423;
@@ -64,5 +72,6 @@ button {
 
 button:hover {
   background-color: #ea526f;
+  cursor: pointer;
 }
 </style>
