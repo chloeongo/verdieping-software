@@ -1,7 +1,6 @@
 <template>
   <header-comp />
   <quote />
-  <footer-comp />
 </template>
 
 <script></script>
