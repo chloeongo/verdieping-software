@@ -1,6 +1,6 @@
 <template>
   <header>
-    <p>Dit is de header</p>
+    <p>Quote Generator</p>
   </header>
 </template>
 

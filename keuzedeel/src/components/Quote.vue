@@ -2,10 +2,8 @@
   <div>
     <h1>{{ quote }}</h1>
     <h2>{{ author }}</h2>
-  </div>
 
-  <div>
-    <button>Generate New</button>
+    <button @onclick="fetchQuote">Generate New</button>
   </div>
 </template>
 
@@ -13,16 +11,44 @@
 export default {
   data() {
     return {
-      quote: "Hello World",
-      author: "by author",
+      quote: "Loading...",
+      author: "Unknown",
     };
+  },
+  methods: {
+    async fetchQuote() {
+      try {
+        const response = await window.axios.get(
+          "https://api.api-ninjas.com/v1/quotes",
+          {
+            headers: {
+              "X-Api-Key": "N40yGAndJ5fkxs9uNIyz2A==Vyq3rDB9kSsyx2oj",
+            },
+          }
+        );
+
+        if (response.data.length > 0) {
+          this.quote = response.data[0].quote;
+          this.author = response.data[0].author;
+        }
+      } catch (error) {
+        console.error("API Error: ", error);
+      }
+    },
+  },
+  mounted() {
+    this.fetchQuote();
   },
 };
 </script>
 
-<style>
+<style scoped>
+div {
+  text-align: center;
+}
+
 h1 {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 button {
