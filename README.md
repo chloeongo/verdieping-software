@@ -1,3 +1,3 @@
 # verdieping-software
 
-Project voor mijn keuzedeel, verdieping software
+Project om API en Vue te leren
