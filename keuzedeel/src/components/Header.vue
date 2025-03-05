@@ -1,16 +1,23 @@
 <template>
   <header>
-    <p>Quote Generator</p>
+    <img src="/src/assests/header.png" />
   </header>
 </template>
 
 <script></script>
 
-<style>
+<style scoped>
 header {
-  background: darkgray;
+  position: fixed;
+  top: 0;
+  left: 0;
   margin: 0;
   width: 100%;
-  height: 50px;
+  height: 65px;
+}
+img {
+  height: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 </style>
