@@ -49,13 +49,14 @@ div {
 
 h1 {
   font-size: 55px;
-  margin-top: 150px;
+  margin-top: 120px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
 h2 {
   font-family: "Noto Serif Georgian", serif;
+  color: #937d64;
 }
 
 button {
@@ -68,6 +69,8 @@ button {
   background-color: #e76b74;
   border: none;
   color: #1a1423;
+  border-color: #eff1f3;
+  margin-bottom: 80vh;
 }
 
 button:hover {

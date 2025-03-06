@@ -8,15 +8,12 @@
 <style>
 body {
   margin: 0;
-  background-color: #eff1f3;
+  background: linear-gradient(#eff1f3, #eff1f3, #ffaeae, #e76b74);
+  background-size: 500vw;
+  background-repeat: no-repeat;
 }
 h1 {
   font-family: "Playfair Display", serif;
-  color: #1a1423;
-}
-
-p {
-  font-family: "Noto Serif Georgian", serif;
   color: #1a1423;
 }
 </style>
