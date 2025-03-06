@@ -3,7 +3,12 @@
     <h1>{{ quote }}</h1>
     <h2>{{ author }}</h2>
 
-    <button @onclick="fetchQuote">Generate New</button>
+    <button
+      @click="fetchQuote"
+      class="cursor-pointer transition-all bg-pink-500 text-white px-10 py-4 rounded-lg border-pink-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+    >
+      Generate New
+    </button>
   </div>
 </template>
 
@@ -52,6 +57,7 @@ h1 {
   margin-top: 120px;
   margin-left: 50px;
   margin-right: 50px;
+  font-weight: 550;
 }
 
 h2 {
@@ -61,16 +67,9 @@ h2 {
 
 button {
   font-family: "Noto Serif Georgian", serif;
-  font-size: larger;
-  font-weight: 600;
-  border-radius: 12px;
-  margin-top: 15px;
-  padding: 17px;
   background-color: #e76b74;
-  border: none;
-  color: #1a1423;
-  border-color: #eff1f3;
-  margin-bottom: 80vh;
+  margin-bottom: 70vh;
+  margin-top: 10vh;
 }
 
 button:hover {
