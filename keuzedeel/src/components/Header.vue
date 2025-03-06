@@ -1,10 +1,27 @@
 <template>
   <header>
-    <img src="/src/assests/header.png" />
+    <img
+      @click="rotateImage"
+      :style="{ transform: `rotate(${rotationAngle}deg)` }"
+      src="/src/assests/header.png"
+    />
   </header>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      rotationAngle: 0,
+    };
+  },
+  methods: {
+    rotateImage() {
+      this.rotationAngle += 160;
+    },
+  },
+};
+</script>
 
 <style scoped>
 header {
@@ -19,5 +36,9 @@ img {
   height: 70px;
   margin-left: 10px;
   margin-top: 10px;
+  transition: transform 1s ease-in-out;
+}
+img:hover {
+  cursor: pointer;
 }
 </style>

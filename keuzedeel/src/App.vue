@@ -8,7 +8,7 @@
 <style>
 body {
   margin: 0;
-  background: linear-gradient(#eff1f3, #eff1f3, #ffaeae, #e76b74);
+  background: linear-gradient(#eff1f3, #eff1f3, #ffaeae);
   background-size: 500vw;
   background-repeat: no-repeat;
 }
